@@ -1,0 +1,226 @@
+{
+  "toppings": [
+    {
+      "id": 1,
+      "name": "anchovy"
+    },
+    {
+      "id": 2,
+      "name": "bacon"
+    },
+    {
+      "id": 3,
+      "name": "basil"
+    },
+    {
+      "id": 4,
+      "name": "chili"
+    },
+    {
+      "id": 5,
+      "name": "mozzarella"
+    },
+    {
+      "id": 6,
+      "name": "mushroom"
+    },
+    {
+      "id": 7,
+      "name": "olive"
+    },
+    {
+      "id": 8,
+      "name": "onion"
+    },
+    {
+      "id": 9,
+      "name": "pepper"
+    },
+    {
+      "id": 10,
+      "name": "pepperoni"
+    },
+    {
+      "id": 11,
+      "name": "sweetcorn"
+    },
+    {
+      "id": 12,
+      "name": "tomato"
+    }
+  ],
+  "pizzas": [
+    {
+      "name": "Blazin' Inferno",
+      "toppings": [
+        {
+          "id": 10,
+          "name": "pepperoni"
+        },
+        {
+          "id": 9,
+          "name": "pepper"
+        },
+        {
+          "id": 3,
+          "name": "basil"
+        },
+        {
+          "id": 4,
+          "name": "chili"
+        },
+        {
+          "id": 7,
+          "name": "olive"
+        },
+        {
+          "id": 2,
+          "name": "bacon"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Seaside Surfin'",
+      "toppings": [
+        {
+          "id": 6,
+          "name": "mushroom"
+        },
+        {
+          "id": 7,
+          "name": "olive"
+        },
+        {
+          "id": 2,
+          "name": "bacon"
+        },
+        {
+          "id": 3,
+          "name": "basil"
+        },
+        {
+          "id": 1,
+          "name": "anchovy"
+        },
+        {
+          "id": 8,
+          "name": "onion"
+        },
+        {
+          "id": 11,
+          "name": "sweetcorn"
+        },
+        {
+          "id": 9,
+          "name": "pepper"
+        },
+        {
+          "id": 5,
+          "name": "mozzarella"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Plain Ol' Pepperoni",
+      "toppings": [
+        {
+          "id": 10,
+          "name": "pepperoni"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Margarite",
+      "toppings": [
+        {
+          "id": 5,
+          "name": "mozzarella"
+        },
+        {
+          "id": 12,
+          "name": "tomato"
+        },
+        {
+          "id": 3,
+          "name": "basil"
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "availableapis": [
+    {
+      "getvendorinfo": {
+        "vendorname": "Vendor Name",
+        "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
+        "merchantid": "1234141414464646546",
+        "servicezipcode": "98004",
+        "url": "http://expedialocal.com/getvendorinfo"
+      }
+    },
+    {
+      "getproducts": {
+        "url": "http://expedialocal.com/getproducts"
+      }
+    },
+    {
+      "createorder": {
+        "url": "http://expedialocal.com/createorder"
+      }
+    }
+  ],
+  "products": [
+    {
+      "productid": "1000",
+      "description": "Lobster Tails",
+      "cost": 50.0
+    },
+    {
+      "productid": "1001",
+      "description": "Filet Mignon",
+      "cost": 45.0
+    },
+    {
+      "productid": "1002",
+      "description": "King Crab Legs",
+      "cost": 60.0
+    }
+  ],
+  "order": {
+    "orderid": "100000",
+    "orderdate": "07/09/2018",
+    "deliverydatetime": "07/11/2018 6:00PM",
+    "servicestartdatetime": "07/11/2018 6:00PM",
+    "serviceenddatetime": "07/15/2018 6:00PM",
+    "totalamount": 155.0,
+    "orderlines": [
+      {
+        "orderlineid": 20001,
+        "productid": 1000,
+        "description": "Lobster Tails",
+        "sequence": 1,
+        "quantity": 1,
+        "cost": 50.0
+      },
+      {
+        "orderlineid": 20002,
+        "productid": 1001,
+        "description": "Filet Mignon",
+        "sequence": 2,
+        "quantity": 1,
+        "cost": 45.0
+      },
+      {
+        "orderlineid": 20003,
+        "productid": 1002,
+        "description": "King Crab Legs",
+        "sequence": 3,
+        "quantity": 1,
+        "cost": 60.0
+      }
+    ]
+  }
+}
