@@ -1,0 +1,25 @@
+{
+  "availableapis":
+    [
+      {
+        "getvendorinfo": {
+        "vendorname": "Vendor Name",
+        "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
+        "merchantid": "1234141414464646546",
+        "servicezipcodes": ["98004","98005","98006","98007","98059"],
+        "url": "http://expedialocal.com/getvendorinfo"
+        }
+      },
+      {
+        "getproducts":
+        {
+          "url": "http://expedialocal.com/getproducts"
+        }
+      },
+      {
+        "createorder": {
+          "url": "http://expedialocal.com/createorder"
+        }
+      }
+    ]
+}
