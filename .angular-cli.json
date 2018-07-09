@@ -53,6 +53,6 @@
   "defaults": {
     "styleExt": "css",
     "component": {},
-    "serve": { "host": "0.0.0.0", "port": 4201 }
+    "serve": { "host": "belc02sn07yg8wn.sea.corp.expecn.com", "port": 4201 }
   }
 }
