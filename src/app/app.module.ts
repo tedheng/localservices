@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SeafoodbuffetComponent } from './seafoodbuffet/seafoodbuffet.component';
 import { PetcareComponent } from './petcare/petcare.component';
 import { ProductsService } from './products.service';
+import { OrdersService } from './orders.service';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -21,7 +22,7 @@ import { RouterModule } from '@angular/router';
       ]
     )
   ],
-  providers: [ProductsService],
-  bootstrap: [AppComponent]
+  providers: [ProductsService, OrdersService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

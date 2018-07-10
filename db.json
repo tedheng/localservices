@@ -151,79 +151,92 @@
       "id": 4
     }
   ],
-  "availableapis": [
+  "vendors": [
     {
+      "id": 100,
       "vendorinfo": {
         "vendorname": "Vendor Name",
         "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
         "merchantid": "1234141414464646546",
-        "servicezipcodes": ["98004","98005","98006","98007"]
-      }
-    },
-    {
-      "getproducts": {
-        "url": "http://expedialocal.com/getproducts"
-      }
-    },
-    {
-      "createorder": {
-        "url": "http://expedialocal.com/createorder"
-      }
+        "servicezipcodes": [
+          "98004",
+          "98005",
+          "98006",
+          "98007"
+        ]
+      },
+      "apis": [
+        {
+          "getproducts": {
+            "url": "http://expedialocal.com/getproducts"
+          }
+        },
+        {
+          "createorder": {
+            "url": "http://expedialocal.com/createorder"
+          }
+        }
+      ]
     }
   ],
   "products": [
     {
-      "productid": 1000,
-      "description": "Lobster Tails",
-      "cost": 50.00,
+      "id": 1000,
+      "vendorid": 100,
+      "description": "<b>Rock Lobster Tail</b><br>Wild-caught Caribbean lobster wood-grilled to perfection by our Certified Grill Masters. Need we say more? 730 Cal",
+      "cost": 50,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png"
     },
     {
-      "productid": 1001,
-      "description": "Filet Mignon",
-      "cost": 45.00,
+      "id": 1001,
+      "vendorid": 100,
+      "description": "<b>King Crab Legs</b><br>One of our favorite dishes, featuring wild-caught North Pacific King Crab legs, paired with our signature Crab Linguini Alfredo. And to make it even more delicious, it’s served with choice of side. 1050 Cal",
+      "cost": 45,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png"
-
     },
     {
-      "productid": 1002,
-      "description": "King Crab Legs",
-      "cost": 60.00,
+      "id": 1002,
+      "vendorid": 100,
+      "description": "<b>Filet Mignon</b><br>With a great cut of steak, you keep it simple. Our filet gets a simple peppercorn seasoning before it’s cooked just how you like it on our wood-fired grill. Served with a side of mashed potatoes and your choice of side. 420 Cal",
+      "cost": 60,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
     }
   ],
-  "order": {
-    "orderid": "100000",
-    "orderdate": "07/09/2018",
-    "deliverydatetime": "07/11/2018 6:00PM",
-    "servicestartdatetime": "07/11/2018 6:00PM",
-    "serviceenddatetime": "07/15/2018 6:00PM",
-    "totalamount": 155.0,
-    "orderlines": [
-      {
-        "orderlineid": 20001,
-        "productid": 1000,
-        "description": "Lobster Tails",
-        "sequence": 1,
-        "quantity": 1,
-        "cost": 50.0
-      },
-      {
-        "orderlineid": 20002,
-        "productid": 1001,
-        "description": "Filet Mignon",
-        "sequence": 2,
-        "quantity": 1,
-        "cost": 45.0
-      },
-      {
-        "orderlineid": 20003,
-        "productid": 1002,
-        "description": "King Crab Legs",
-        "sequence": 3,
-        "quantity": 1,
-        "cost": 60.0
-      }
-    ]
-  }
+  "orders": [
+    {
+      "id": "100000",
+      "vendorid": 100,
+      "orderdate": "07/09/2018",
+      "deliverydatetime": "07/11/2018 6:00PM",
+      "servicestartdatetime": "07/11/2018 6:00PM",
+      "serviceenddatetime": "07/15/2018 6:00PM",
+      "totalamount": 155,
+      "orderlines": [
+        {
+          "orderlineid": 20001,
+          "productid": 1000,
+          "description": "Lobster Tails",
+          "sequence": 1,
+          "quantity": 1,
+          "cost": 50
+        },
+        {
+          "orderlineid": 20002,
+          "productid": 1001,
+          "description": "Filet Mignon",
+          "sequence": 2,
+          "quantity": 1,
+          "cost": 45
+        },
+        {
+          "orderlineid": 20003,
+          "productid": 1002,
+          "description": "King Crab Legs",
+          "sequence": 3,
+          "quantity": 1,
+          "cost": 60
+        }
+      ]
+    }
+  ]
 }
