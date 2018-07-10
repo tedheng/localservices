@@ -2,26 +2,10 @@
 {{headerTitle}}
 </div>
 <h1>Products</h1>
-<div class="grid-container">
-  <span class="col"><img src="../../assets/lobster-tail.png"></span>
-  <span class="col"><b>Rock Lobster Tail</b><br>Wild-caught Caribbean lobster wood-grilled to perfection by our Certified Grill Masters. Need we say more? 730 Cal</span>
-  <span class="col">$50.00</span>
-
-  <span class="col"><img src="../../assets/king-crab-legs.png"></span>
-  <span class="col"><b>King Crab Legs</b><br>One of our favorite dishes, featuring wild-caught North Pacific King Crab legs, paired with our signature Crab Linguini Alfredo. And to make it even more delicious, it’s served with choice of side. 1050 Cal</span>
-  <span class="col">$50.00</span>
-
-  <span class="col"><img src="../../assets/filet-mignon.png"></span>
-  <span class="col"><b>Filet Mignon</b><br>With a great cut of steak, you keep it simple. Our filet gets a simple peppercorn seasoning before it’s cooked just how you like it on our wood-fired grill. Served with a side of mashed potatoes and your choice of side. 420 Cal</span>
-  <span class="col">$50.00</span>
-</div>
-
-<div class="grid-container">
-  <div ng-repeat="(id, vendorid, description, cost, imageurl) in products">
-    <span class="col"><img src="{{imageurl}}"></span>
-    <span class="col">{{description}}</span>
-    <span class="col">{{cost}}</span>
-  </div>
+<div *ngFor="let product of products" class="grid-container">
+  <span class="col"><img src="{{product.imageurl}}"></span>
+  <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
+  <span class="col">{{product.cost | currency}}</span>
 </div>
 
 <h1>Orders</h1>
