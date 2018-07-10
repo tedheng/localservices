@@ -9,16 +9,20 @@ import { PetcareComponent } from './petcare/petcare.component';
 import { ProductsService } from './products.service';
 import { OrdersService } from './orders.service';
 import { RouterModule } from '@angular/router';
+import { VendorregistrationComponent } from './vendorregistration/vendorregistration.component';
+import { ProductregistrationComponent } from './productregistration/productregistration.component';
 
 @NgModule({
-  declarations: [AppComponent, SeafoodbuffetComponent, PetcareComponent],
+  declarations: [AppComponent, SeafoodbuffetComponent, PetcareComponent, VendorregistrationComponent, ProductregistrationComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'seafoodbuffet', component: SeafoodbuffetComponent},
-      {path: 'petcare', component: PetcareComponent}
+      {path: 'petcare', component: PetcareComponent},
+      {path: 'vendorregistration', component: VendorregistrationComponent},
+      {path: 'productregistration', component: ProductregistrationComponent}
       ]
     )
   ],
