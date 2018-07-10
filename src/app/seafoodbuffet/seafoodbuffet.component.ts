@@ -10,19 +10,21 @@ import { OrdersService } from '../orders.service';
 })
 export class SeafoodbuffetComponent implements OnInit {
   headerTitle: String = 'Seafood Buffet';
+  products: any;
+  orders: any;
   constructor(private productsService: ProductsService, private ordersService: OrdersService) {}
 
   ngOnInit() {
-    const products = this.productsService.getProducts();
-    const orders = this.ordersService.getOrders();
+    this.products = this.productsService.getProducts();
+    this.orders = this.ordersService.getOrders();
 
     this.productsService
       .getProducts()
       .subscribe(
-        val => console.log(val));
+        val => this.products = val);
     this.ordersService
       .getOrders()
       .subscribe(
-        val => console.log(val));
+        val => this.orders = val);
   }
 }

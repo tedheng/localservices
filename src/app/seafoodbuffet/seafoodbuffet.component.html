@@ -16,4 +16,12 @@
   <span class="col">$50.00</span>
 </div>
 
+<div class="grid-container">
+  <div ng-repeat="(id, vendorid, description, cost, imageurl) in products">
+    <span class="col"><img src="{{imageurl}}"></span>
+    <span class="col">{{description}}</span>
+    <span class="col">{{cost}}</span>
+  </div>
+</div>
+
 <h1>Orders</h1>
