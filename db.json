@@ -182,18 +182,21 @@
   "products": [
     {
       "id": 1000,
+      "vendorid": 100,
       "description": "Lobster Tails",
       "cost": 50,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png"
     },
     {
       "id": 1001,
+      "vendorid": 100,
       "description": "Filet Mignon",
       "cost": 45,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png"
     },
     {
       "id": 1002,
+      "vendorid": 100,
       "description": "King Crab Legs",
       "cost": 60,
       "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
