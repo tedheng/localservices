@@ -12,7 +12,7 @@ export class PetcareComponent implements OnInit {
   constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
-    this.productsService.getProductList().subscribe(val => console.log(val));
+    this.productsService.getProducts().subscribe(val => console.log(val));
   }
 
 }
