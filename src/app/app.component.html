@@ -1,3 +1,11 @@
-<h1>
-  <app-seafoodbuffet></app-seafoodbuffet>
-</h1>
+
+<div>
+  <div class='topnav'>
+    <a class="active" [routerLink]="['/seafoodbuffet']">Sea Food Buffet</a>
+    <a [routerLink]="['/petcare']">Pet Care</a>
+  </div>
+  <div class='container'>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
