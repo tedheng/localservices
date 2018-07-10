@@ -15,15 +15,15 @@ export class SeafoodbuffetComponent implements OnInit {
   constructor(private productsService: ProductsService, private ordersService: OrdersService) {}
 
   ngOnInit() {
-    this.products = this.productsService.getProducts();
-    this.orders = this.ordersService.getOrders();
+    this.products = this.productsService.getProducts(100);
+    this.orders = this.ordersService.getOrders(100);
 
     this.productsService
-      .getProducts()
+      .getProducts(100)
       .subscribe(
         val => this.products = val);
     this.ordersService
-      .getOrders()
+      .getOrders(100)
       .subscribe(
         val => this.orders = val);
   }

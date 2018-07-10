@@ -8,11 +8,24 @@ import { ProductsService } from '../products.service';
 })
 export class PetcareComponent implements OnInit {
   headerTitle: String = 'Pet Care';
+  products: any;
+  orders: any;
 
   constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
-    this.productsService.getProducts().subscribe(val => console.log(val));
+    this.products = this.productsService.getProducts(200);
+    this.orders = this.ordersService.getOrders(200);
+
+    this.productsService
+      .getProducts(200)
+      .subscribe(
+        val => this.products = val);
+    this.ordersService
+      .getOrders(200)
+      .subscribe(
+        val => this.orders = val);
+
   }
 
 }
