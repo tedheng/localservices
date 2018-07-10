@@ -3,25 +3,26 @@
 </div>
 
 <div class="products">
-  <h1>Products</h1>
+  <h1>Menu</h1>
   <div *ngFor="let product of products" class="grid-container three">
     <span class="col"><img src="{{product.imageurl}}"></span>
     <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
     <span class="col">{{product.cost | currency}}</span>
   </div>
-
 </div>
 
 <div class="orders">
   <h1>Orders</h1>
   <div *ngFor="let order of orders">
-    <div>Order ID: {{order.id}}</div>
-    <div>Vendor ID: {{order.vendorid}}</div>
-    <div>Order Date: {{order.orderdate}}</div>
-    <div>Delivery Date Time: {{order.deliverydatetime}}</div>
-    <div>Service Start Date Time: {{order.servicestartdatetime}}</div>
-    <div>Service End Date Time: {{order.serviceenddatetime}}</div>
-    <div>Total Amount: {{order.totalamount}}</div>
+    <div class="grid-container two">
+      <span>Order ID:</span><span>{{order.id}}</span>
+      <span>Vendor ID:</span><span>{{order.vendorid}}</span>
+      <span>Order Date:</span><span>{{order.orderdate}}</span>
+      <span>Delivery Date Time:</span><span>{{order.deliverydatetime}}</span>
+      <span>Service Start Date Time:</span><span>{{order.servicestartdatetime}}</span>
+      <span>Service End Date Time:</span><span>{{order.serviceenddatetime}}</span>
+      <span>Total Amount:</span><span>{{order.totalamount | currency}}</span>
+    </div>
     <div *ngFor="let orderline of order.orderlines" class="grid-container four">
       <span class="col"><img src="{{orderline.imageurl}}"></span>
       <span class="col"><b>{{orderline.title}}</b></span>
