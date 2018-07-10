@@ -37,6 +37,11 @@
   padding: .4em 1.3em;
 }
 
+.numeric
+{
+  text-align: right;
+}
+
 .products
 {
 
