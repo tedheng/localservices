@@ -48,7 +48,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "seafood-buffet:build"
+            "browserTarget": "seafood-buffet:build",
+            "host": "belc02sn07yg8wn.sea.corp.expecn.com",
+            "port": 4201
           },
           "configurations": {
             "production": {

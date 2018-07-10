@@ -153,12 +153,11 @@
   ],
   "availableapis": [
     {
-      "getvendorinfo": {
+      "vendorinfo": {
         "vendorname": "Vendor Name",
         "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
         "merchantid": "1234141414464646546",
-        "servicezipcode": "98004",
-        "url": "http://expedialocal.com/getvendorinfo"
+        "servicezipcodes": ["98004","98005","98006","98007"]
       }
     },
     {
