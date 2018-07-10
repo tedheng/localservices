@@ -4,9 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "run-p start-browser local-server",
+    "start": "run-p start-browser start-server",
     "start-browser": "ng serve",
-    "local-server": "nodemon server.js",
     "start-server": "json-server db.json --host belc02sn07yg8wn.sea.corp.expecn.com --port 3333",
     "build": "ng build",
     "test": "ng test",
@@ -25,14 +24,12 @@
     "@angular/platform-browser-dynamic": "^5.2.11",
     "@angular/platform-server": "^5.2.11",
     "@angular/router": "^5.2.11",
-    "body-parser": "^1.18.3",
     "core-js": "^2.4.1",
     "json-server": "^0.14.0",
     "rxjs": "^5.5.11",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.6.8",
     "@angular/cli": "^6.0.8",
     "@angular/compiler-cli": "^5.2.11",
     "@types/jasmine": "2.5.38",
@@ -46,11 +43,11 @@
     "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "nodemon": "^1.18.0",
     "npm-run-all": "^4.1.3",
     "protractor": "^5.3.2",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "^2.4.2"
+    "typescript": "^2.4.2",
+    "@angular-devkit/build-angular": "~0.6.8"
   }
 }
