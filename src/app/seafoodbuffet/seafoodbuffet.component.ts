@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./seafoodbuffet.component.css']
 })
 export class SeafoodbuffetComponent implements OnInit {
+  headerTitle: String = 'Seafood Buffet';
+
   constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
