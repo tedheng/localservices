@@ -6,6 +6,6 @@ export class ProductsService {
   constructor(private http: HttpClient) {}
 
   getProducts() {
-    return this.http.get('http://belc02sn07yg8wn.sea.corp.expecn.com:3333/products?vendorid=100');
+    return this.http.get('http://belmj06jhgq.sea.corp.expecn.com:3333/products?vendorid=100');
   }
 }

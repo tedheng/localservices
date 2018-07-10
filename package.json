@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "run-p start-browser start-server",
     "start-browser": "ng serve",
-    "start-server": "json-server db.json --host belc02sn07yg8wn.sea.corp.expecn.com --port 3333",
+    "start-server": "json-server db.json --host belmj06jhgq.sea.corp.expecn.com --port 3333",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -30,6 +30,7 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^0.6.8",
     "@angular/cli": "^6.0.8",
     "@angular/compiler-cli": "^5.2.11",
     "@types/jasmine": "2.5.38",
@@ -47,7 +48,6 @@
     "protractor": "^5.3.2",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "^2.4.2",
-    "@angular-devkit/build-angular": "~0.6.8"
+    "typescript": "^2.4.2"
   }
 }
