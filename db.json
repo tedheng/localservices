@@ -244,7 +244,8 @@
         {
           "orderlineid": 20001,
           "productid": 1000,
-          "description": "Lobster Tails",
+          "title": "Lobster Tails",
+          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png",
           "sequence": 1,
           "quantity": 1,
           "cost": 50
@@ -252,7 +253,8 @@
         {
           "orderlineid": 20002,
           "productid": 1001,
-          "description": "Filet Mignon",
+          "title": "Filet Mignon",
+          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png",
           "sequence": 2,
           "quantity": 1,
           "cost": 45
@@ -260,7 +262,8 @@
         {
           "orderlineid": 20003,
           "productid": 1002,
-          "description": "King Crab Legs",
+          "title": "King Crab Legs",
+          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png",
           "sequence": 3,
           "quantity": 1,
           "cost": 60

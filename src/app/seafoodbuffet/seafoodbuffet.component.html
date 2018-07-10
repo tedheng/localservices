@@ -1,11 +1,32 @@
 <div class="header-banner">
 {{headerTitle}}
 </div>
-<h1>Products</h1>
-<div *ngFor="let product of products" class="grid-container">
-  <span class="col"><img src="{{product.imageurl}}"></span>
-  <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
-  <span class="col">{{product.cost | currency}}</span>
+
+<div class="products">
+  <h1>Products</h1>
+  <div *ngFor="let product of products" class="grid-container three">
+    <span class="col"><img src="{{product.imageurl}}"></span>
+    <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
+    <span class="col">{{product.cost | currency}}</span>
+  </div>
+
 </div>
 
-<h1>Orders</h1>
+<div class="orders">
+  <h1>Orders</h1>
+  <div *ngFor="let order of orders">
+    <div>Order ID: {{order.id}}</div>
+    <div>Vendor ID: {{order.vendorid}}</div>
+    <div>Order Date: {{order.orderdate}}</div>
+    <div>Delivery Date Time: {{order.deliverydatetime}}</div>
+    <div>Service Start Date Time: {{order.servicestartdatetime}}</div>
+    <div>Service End Date Time: {{order.serviceenddatetime}}</div>
+    <div>Total Amount: {{order.totalamount}}</div>
+    <div *ngFor="let orderline of order.orderlines" class="grid-container four">
+      <span class="col"><img src="{{orderline.imageurl}}"></span>
+      <span class="col"><b>{{orderline.title}}</b></span>
+      <span class="col">{{orderline.quantity}}</span>
+      <span class="col">{{orderline.cost | currency}}</span>
+    </div>
+  </div>
+</div>
