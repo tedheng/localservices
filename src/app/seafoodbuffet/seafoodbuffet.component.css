@@ -3,7 +3,8 @@
   height: 100px;
   text-align: center;
   vertical-align: central;
-  color: white;
+  font-size: 70pt;
+  color: aquamarine;
 }
 
 .grid-container
