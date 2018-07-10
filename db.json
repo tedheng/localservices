@@ -155,7 +155,7 @@
     {
       "id": 100,
       "vendorinfo": {
-        "vendorname": "Vendor Name",
+        "vendorname": "Seafood Buffet",
         "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
         "merchantid": "1234141414464646546",
         "servicezipcodes": [
@@ -168,12 +168,38 @@
       "apis": [
         {
           "getproducts": {
-            "url": "http://expedialocal.com/getproducts"
+            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/products?vendorid=100"
           }
         },
         {
           "createorder": {
-            "url": "http://expedialocal.com/createorder"
+            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/createorder"
+          }
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "vendorinfo": {
+        "vendorname": "Pet Care",
+        "vendorid": "2BEB1B2D-23B6-4F05-9DFA-3FC7EC46B2A0",
+        "merchantid": "4321141414464646546",
+        "servicezipcodes": [
+          "98004",
+          "98005",
+          "98006",
+          "98007"
+        ]
+      },
+      "apis": [
+        {
+          "getproducts": {
+            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/products?vendorid=200"
+          }
+        },
+        {
+          "createorder": {
+            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/createorder"
           }
         }
       ]
