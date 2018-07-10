@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "run-p start-browser start-server",
+    "start": "run-p start-browser local-server",
     "start-browser": "ng serve",
+    "local-server": "json-server db.json --port 3333",
     "start-server": "json-server db.json --host belc02sn07yg8wn.sea.corp.expecn.com --port 3333",
     "build": "ng build",
     "test": "ng test",

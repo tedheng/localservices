@@ -158,12 +158,7 @@
         "vendorname": "Vendor Name",
         "vendorid": "4379b16a-4166-4044-a019-266d986b4d01",
         "merchantid": "1234141414464646546",
-        "servicezipcodes": [
-          "98004",
-          "98005",
-          "98006",
-          "98007"
-        ]
+        "servicezipcodes": ["98004", "98005", "98006", "98007"]
       },
       "apis": [
         {
@@ -185,21 +180,21 @@
       "vendorid": 100,
       "description": "Lobster Tails",
       "cost": 50,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png"
+      "imageurl": "/assets/lobster-tail.png"
     },
     {
       "id": 1001,
       "vendorid": 100,
       "description": "Filet Mignon",
       "cost": 45,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png"
+      "imageurl": "/assets/filet-mignon.png"
     },
     {
       "id": 1002,
       "vendorid": 100,
       "description": "King Crab Legs",
       "cost": 60,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
+      "imageurl": "/assets/king-crab-legs.png"
     }
   ],
   "orders": [
