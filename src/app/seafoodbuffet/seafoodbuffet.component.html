@@ -5,7 +5,7 @@
 <div class="products">
   <h1>Menu</h1>
   <div *ngFor="let product of products" class="grid-container three">
-    <span class="col"><img src="{{product.imageurl}}"></span>
+    <p class="col"><img src="{{product.imageurl}}"></p>
     <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
     <span class="col">{{product.cost | currency}}</span>
   </div>
