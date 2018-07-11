@@ -249,8 +249,8 @@
     {
       "id": 2002,
       "vendorid": 200,
-      "title": "Dog Sit",
-      "description": "Daily walking of your dog while you are away",
+      "title": "Pet Hotel",
+      "description": "Take care of your dog while you are on vacation",
       "cost": 60,
       "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/petHotel.jpg"
     }
@@ -310,7 +310,7 @@
           "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/DogWalking.jpg",
           "sequence": 3,
           "quantity": 1,
-          "cost": 60
+          "cost": 20
         },
         {
           "orderlineid": 20005,
