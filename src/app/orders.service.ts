@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 export class OrdersService {
   constructor(private http: HttpClient) { }
 
-  getOrders() {
-    return this.http.get('http://belc02sn07yg8wn.sea.corp.expecn.com:3333/orders?vendorid=100');
+  getOrders(inputVendorId: Number) {
+    return this.http.get('http://belmj06jhgq.sea.corp.expecn.com:3333/orders?vendorid=' + inputVendorId);
   }
 }

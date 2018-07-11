@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "run-p start-browser start-server",
-    "start-browser": "ng serve",
-    "start-server": "json-server db.json --host belc02sn07yg8wn.sea.corp.expecn.com --port 3333",
+    "start-browser": "ng serve --host 0.0.0.0 --port 4201 --disable-host-check",
+    "start-server": "json-server db.json --host 0.0.0.0 --port 3333",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

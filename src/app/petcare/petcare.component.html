@@ -1,15 +1,39 @@
 <div class="header-banner">
   {{headerTitle}}
 </div>
-<h1>Services</h1>
-<div class="grid-container">
-  <span class="col"><img src="../../assets/DogWalking.jpg"></span>
-  <span class="col"><b>Dog Sit</b> Daily walking of your dog while you are away</span>
-  <span class="col">$20.00/per day</span>
 
-  <span class="col"><img src="../../assets/petHotel.jpg"></span>
-  <span class="col"><b>Pet Hotel</b> Host your pet while you are on vacation</span>
-  <span class="col">$50.00/per day</span>
+<div class="products">
+<h1>Services</h1>
+  <div *ngFor="let product of products" class="grid-container three">
+    <span class="col"><img src="{{product.imageurl}}"></span>
+    <span class="col"><h2>{{product.title}}</h2>{{product.description}}</span>
+    <span class="col">{{product.cost | currency}}</span>
+  </div>
 </div>
 
-<h1>Orders</h1>
+<div class="orders">
+  <h1>Orders</h1>
+  <div *ngFor="let order of orders">
+    <div class="grid-container two">
+      <span>Order ID:</span><span>{{order.id}}</span>
+      <span>Vendor ID:</span><span>{{order.vendorid}}</span>
+      <span>Order Date:</span><span>{{order.orderdate}}</span>
+      <span>Delivery Date Time:</span><span>{{order.deliverydatetime}}</span>
+      <span>Service Start Date Time:</span><span>{{order.servicestartdatetime}}</span>
+      <span>Service End Date Time:</span><span>{{order.serviceenddatetime}}</span>
+      <span>Total Amount:</span><span>{{order.totalamount | currency}}</span>
+    </div>
+    <div class="grid-container four">
+      <span class="col"></span>
+      <span class="col"><b>Product Description</b></span>
+      <span class="col numeric"><b>Quantity</b></span>
+      <span class="col numeric"><b>Price</b></span>
+    </div>
+    <div *ngFor="let orderline of order.orderlines" class="grid-container four">
+      <span class="col"><img src="{{orderline.imageurl}}"></span>
+      <span class="col"><b>{{orderline.title}}</b></span>
+      <span class="col numeric">{{orderline.quantity}}</span>
+      <span class="col numeric">{{orderline.cost | currency}}</span>
+    </div>
+  </div>
+</div>

@@ -5,20 +5,20 @@
         "productid": 1000,
         "description": "Lobster Tails",
         "cost": 50.00,
-        "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png"
+        "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/lobster-tail.png"
       },
       {
         "productid": 1001,
         "description": "Filet Mignon",
         "cost": 45.00,
-        "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png"
+        "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/filet-mignon.png"
 
       },
       {
         "productid": 1002,
         "description": "King Crab Legs",
         "cost": 60.00,
-        "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
+        "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
       }
     ]
 }
