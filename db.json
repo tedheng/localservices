@@ -168,12 +168,12 @@
       "apis": [
         {
           "getproducts": {
-            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/products?vendorid=100"
+            "url": "http://belmj06jhgq.sea.corp.expecn.com:3333/products?vendorid=100"
           }
         },
         {
           "createorder": {
-            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/createorder"
+            "url": "http://belmj06jhgq.sea.corp.expecn.com:3333/createorder"
           }
         }
       ]
@@ -194,12 +194,12 @@
       "apis": [
         {
           "getproducts": {
-            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/products?vendorid=200"
+            "url": "http://belmj06jhgq.sea.corp.expecn.com:3333/products?vendorid=200"
           }
         },
         {
           "createorder": {
-            "url": "http://belc02sn07yg8wn.sea.corp.expecn.com:3333/createorder"
+            "url": "http://belmj06jhgq.sea.corp.expecn.com:3333/createorder"
           }
         }
       ]
@@ -212,7 +212,7 @@
       "title": "Rock Lobster Tail",
       "description": "Wild-caught Caribbean lobster wood-grilled to perfection by our Certified Grill Masters. Need we say more? 730 Cal",
       "cost": 50,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png"
+      "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/lobster-tail.png"
     },
     {
       "id": 1001,
@@ -220,7 +220,7 @@
       "title": "King Crab Legs",
       "description": "One of our favorite dishes, featuring wild-caught North Pacific King Crab legs, paired with our signature Crab Linguini Alfredo. And to make it even more delicious, it’s served with choice of side. 1050 Cal",
       "cost": 45,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png"
+      "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/filet-mignon.png"
     },
     {
       "id": 1002,
@@ -228,7 +228,7 @@
       "title": "Filet Mignon",
       "description": "With a great cut of steak, you keep it simple. Our filet gets a simple peppercorn seasoning before it’s cooked just how you like it on our wood-fired grill. Served with a side of mashed potatoes and your choice of side. 420 Cal",
       "cost": 60,
-      "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
+      "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/king-crab-legs.png"
     },
     {
       "id": 2001,
@@ -261,7 +261,7 @@
           "orderlineid": 20001,
           "productid": 1000,
           "title": "Lobster Tails",
-          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/lobster-tail.png",
+          "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/lobster-tail.png",
           "sequence": 1,
           "quantity": 1,
           "cost": 50
@@ -270,7 +270,7 @@
           "orderlineid": 20002,
           "productid": 1001,
           "title": "Filet Mignon",
-          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/filet-mignon.png",
+          "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/filet-mignon.png",
           "sequence": 2,
           "quantity": 1,
           "cost": 45
@@ -279,7 +279,7 @@
           "orderlineid": 20003,
           "productid": 1002,
           "title": "King Crab Legs",
-          "imageurl": "http://belc02sn07yg8wn.sea.corp.expecn.com:4201/assets/king-crab-legs.png",
+          "imageurl": "http://belmj06jhgq.sea.corp.expecn.com:4201/assets/king-crab-legs.png",
           "sequence": 3,
           "quantity": 1,
           "cost": 60
