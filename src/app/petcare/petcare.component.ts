@@ -8,6 +8,7 @@ import { OrdersService } from '../orders.service';
   styleUrls: ['./petcare.component.css']
 })
 export class PetcareComponent implements OnInit {
+  vendorId: Number = 200;
   headerTitle: String = 'Pet Care';
   products: any;
   orders: any;
@@ -15,15 +16,15 @@ export class PetcareComponent implements OnInit {
   constructor(private productsService: ProductsService, private ordersService: OrdersService) {}
 
   ngOnInit() {
-    this.products = this.productsService.getProducts(200);
-    this.orders = this.ordersService.getOrders(200);
+    this.products = this.productsService.getProducts(this.vendorId);
+    this.orders = this.ordersService.getOrders(this.vendorId);
 
     this.productsService
-      .getProducts(200)
+      .getProducts(this.vendorId)
       .subscribe(
         val => this.products = val);
     this.ordersService
-      .getOrders(200)
+      .getOrders(this.vendorId)
       .subscribe(
         val => this.orders = val);
 
