@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
-import { HttpClient } from '@angular/common/http';
 import { OrdersService } from '../orders.service';
 import { VendorsService } from '../vendors.service';
 
@@ -9,7 +8,7 @@ import { VendorsService } from '../vendors.service';
   templateUrl: './seafoodbuffet.component.html',
   styleUrls: ['./seafoodbuffet.component.css']
 })
-export class SeafoodbuffetComponent implements OnInit {
+export class SeafoodBuffetComponent implements OnInit {
   vendorId: Number = 100;
   headerTitle: String = 'Seafood Buffet';
   products: any;
